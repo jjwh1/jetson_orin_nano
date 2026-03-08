@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <chrono>
+#include <cuda_fp16.h>
 
 using namespace nvinfer1;
 
