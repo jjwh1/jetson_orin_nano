@@ -38,7 +38,8 @@ int main() {
     // =========================
     // 2. Tensor names
     // =========================
-    const char* input_name = engine->getTensorName(0);
+    const char* input_name = engine->getIOTensorName(0);
+    // const char* input_name = engine->getTensorName(0);
     const char* output_name = engine->getTensorName(1);
 
     std::cout << "Input tensor: " << input_name << std::endl;
@@ -122,8 +123,8 @@ int main() {
     cudaFree(d_input);
     cudaFree(d_output);
     cudaStreamDestroy(stream);
-    context->destroy();
-    engine->destroy();
-    runtime->destroy();
+    // context->destroy();
+    // engine->destroy();
+    // runtime->destroy();
 
 }
