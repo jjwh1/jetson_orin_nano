@@ -1,1 +1,1 @@
-# jetson_orin_nano_C-_inference
+# jetson_orin_nano_inference
